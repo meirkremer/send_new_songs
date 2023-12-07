@@ -24,7 +24,7 @@ def send_mail(title: str, html_message: str, image_objects: list):
     message.attach(MIMEText(html_message, 'html'))
 
     # make a mailing list by txt file
-    with open('test_list.txt', 'r', encoding='utf-8') as f:
+    with open('mailing_list.txt', 'r', encoding='utf-8') as f:
         all_recipients_emails = [mail.replace('\n', '') for mail in f.readlines() if '@' in mail]
 
     try:
