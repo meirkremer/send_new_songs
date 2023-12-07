@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+</head>
+
+<body style="background-color: rgba(1, 1, 15, 0.905); text-align: center; padding: 5%;">
+    <div style="margin: 16px; text-align: center;">
+        <table style="margin: 0 auto; width: 80%;">
+            {% for row in data %}
+            <tr>
+                <td style="width: 50%; padding: 1%; margin: 0;">
+                    {{ row[0] }}
+                </td>
+                <td style="width: 50%; padding: 1%; margin: 0;">
+                    {{ row[1] }}
+                </td>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+    <div style="align-items: center;">
+        <a href= {{ folder_link }} style="text-decoration: none; display: inline-block;">
+            <p style="background-color: greenyellow; padding: 8px; margin: 0; border-radius: 5%;">לכל התוכן היומי</p>
+        </a>
+    </div>
+</body>
+
+</html>

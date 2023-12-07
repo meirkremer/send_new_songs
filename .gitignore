@@ -1,0 +1,8 @@
+venv/
+temp/
+.idea/
+__pycache__/
+credentials/
+mailing_list.txt
+test_list.txt
+configuration.py
